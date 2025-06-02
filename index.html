@@ -6,29 +6,40 @@
   <title>Copiton Enterprises</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
+<div id="header-placeholder"></div>
+<!-- Your page content here -->
+<div id="footer-placeholder"></div>
+
+<script>
+  // Load header and footer dynamically
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header-placeholder').innerHTML = data);
+
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
+
 <body>
-  
-
-
-<header class="main-header">
-  <div class="container">
-    <h1 class="logo">Copiton Enterprises</h1>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="invest.html">Invest With Us</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="realtor.html">Become Our Realtor</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
+  <header class="main-header">
+    <div class="container">
+      <h1 class="logo">Copiton Enterprises</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="invest.html">Invest With Us</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="realtor.html">Become Our Realtor</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <section class="hero">
     <div class="container">
